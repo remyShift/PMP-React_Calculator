@@ -34,7 +34,7 @@ export default function NumberButton({ children }: { children: React.ReactNode }
 		)
 	} else if (children === 0) {
 		return (
-			<button onClick={handleClick} className="bg-stone-900 rounded-full w-[175px] h-20 flex items-center justify-start pl-7 text-white text-3xl hover:bg-stone-800 transition-colors duration-200">
+			<button onClick={handleClick} className="bg-stone-900 rounded-full md:m-0 md:w-[192px] w-[175px] h-20 flex items-center justify-start pl-7 text-white text-3xl hover:bg-stone-800 transition-colors duration-200">
 				{children}
 			</button>
 		)
