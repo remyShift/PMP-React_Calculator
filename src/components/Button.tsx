@@ -1,11 +1,11 @@
 import useCalculatorStore from "../store"
 
 const buttonStyles = {
-	default: "rounded-[50%] w-16 h-16 sm:w-20 sm:h-20 flex items-center text-white text-2xl sm:text-3xl transition-colors duration-200",
+	default: "rounded-[50%] w-16 h-16 md:w-20 md:h-20 flex items-center text-white text-2xl md:text-3xl transition-colors duration-200",
 	number: "bg-stone-900 hover:bg-stone-800 justify-center",
-	operation: "bg-orange-500 hover:bg-orange-400 text-3xl sm:text-4xl justify-center",
-	function: "bg-stone-500 hover:bg-stone-400 text-3xl sm:text-4xl justify-center",
-	zero: "bg-stone-900 hover:bg-stone-800 rounded-full w-[calc(50%-1.7rem)] sm:w-[192px] h-16 sm:h-20 justify-start pl-6"
+	operation: "bg-orange-500 hover:bg-orange-400 text-3xl md:text-4xl justify-center",
+	function: "bg-stone-500 hover:bg-stone-400 text-3xl md:text-4xl justify-center",
+	zero: "bg-stone-900 hover:bg-stone-800 rounded-full w-[calc(50%-0.5rem)] sm:w-[calc(50%-1.2rem)] md:w-[179px] h-16 md:h-20 justify-start pl-6"
 };
 
 export default function NumberButton({ children }: { children: React.ReactNode }) {
