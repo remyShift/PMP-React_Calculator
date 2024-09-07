@@ -12,7 +12,7 @@ function KeypadRow({ numbers }: { numbers: (number | string)[] }) {
 
 export default function Keypad() {
 	return (
-		<div className="flex flex-col space-y-4">
+		<div className="flex flex-col space-y-4 mt-24">
 			<KeypadRow numbers={['AC', '+/-', '%', '/']} />
 			<KeypadRow numbers={[7, 8, 9, 'x']} />
 			<KeypadRow numbers={[4, 5, 6, '-']} />
