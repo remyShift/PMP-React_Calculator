@@ -20,9 +20,9 @@ const formatNumber = (num: number): string => {
 		return num > 0 ? 'Overflow' : '-Overflow';
 	}
 
-	const stringNum = num.toString();
+	let stringNum = num.toFixed(10).replace(/\.?0+$/, '');
 
-	if (stringNum.length > MAX_DIGITS) {
+	if (Math.abs(num) < 1e-7 || Math.abs(num) >= 1e12) {
 		return num.toExponential(MAX_DIGITS - 5).replace(/e\+/, 'e');
 	}
 
@@ -44,10 +44,10 @@ const useCalculatorStore = create<CalculatorState>((set) => ({
 				waitingForOperand: false
 			};
 		}
-		const currentValue = parseFloat(state.displayValue.replace(/\s/g, '').replace(',', '.'));
-		const newValue = currentValue === 0 ? digit : currentValue * 10 + digit;
+		const currentValue = state.displayValue.replace(/\s/g, '');
+		const newValue = currentValue === '0' ? digit.toString() : currentValue + digit.toString();
 		return {
-			displayValue: formatNumber(newValue),
+			displayValue: formatNumber(parseFloat(newValue.replace(',', '.'))),
 		};
 	}),
 
@@ -75,7 +75,7 @@ const useCalculatorStore = create<CalculatorState>((set) => ({
 
 	performOperation: (nextOperation) => set((state) => {
 		const { displayValue, previousValue, operation } = state;
-		const inputValue = parseFloat(displayValue);
+		const inputValue = parseFloat(displayValue.replace(',', '.'));
 
 		if (previousValue == null) {
 			return {
