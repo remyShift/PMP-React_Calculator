@@ -2,7 +2,7 @@ import Button from './Button'
 
 function KeypadRow({ numbers }: { numbers: (number | string)[] }) {
 	return (
-		<div className="flex justify-between w-full">
+		<div className="flex justify-between mx-auto w-full">
 			{numbers.map((number) => (
 				<Button key={number}>{number}</Button>
 			))}
