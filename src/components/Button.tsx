@@ -5,7 +5,7 @@ const buttonStyles = {
 	number: "bg-stone-900 hover:bg-stone-800 justify-center",
 	operation: "bg-orange-500 hover:bg-orange-400 text-3xl md:text-4xl justify-center",
 	function: "bg-stone-500 hover:bg-stone-400 text-3xl md:text-4xl justify-center",
-	zero: "bg-stone-900 hover:bg-stone-800 rounded-full w-[calc(50%-0.6rem)] sm:w-[calc(50%-1.2rem)] md:w-[180px] h-16 md:h-20 justify-start pl-6"
+	zero: "bg-stone-900 hover:bg-stone-800 rounded-full w-[calc(50%-0.8rem)] sm:w-[calc(50%-1.2rem)] md:w-[180px] h-16 md:h-20 justify-start pl-6"
 };
 
 export default function NumberButton({ children }: { children: React.ReactNode }) {
