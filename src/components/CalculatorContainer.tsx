@@ -4,7 +4,7 @@ import TextAuthor from './TextAuthor'
 
 export default function Calculator() {
 	return (
-		<div className="bg-black w-[95dvw] md:w-[90dvw] max-w-[400px] h-[75dvh] md:h-[85dvh] max-h-[700px] rounded-2xl shadow-lg shadow-stone-800 mx-auto flex flex-col justify-between">
+		<div className="bg-black w-[95dvw] md:w-[90dvw] max-w-[400px] h-[75dvh] md:h-[85dvh] max-h-[650px] rounded-2xl shadow-lg shadow-stone-800 mx-auto flex flex-col justify-between">
 			<div>
 				<Screen />
 				<Keypad />
