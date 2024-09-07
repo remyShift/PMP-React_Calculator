@@ -1,10 +1,10 @@
-import NumberButton from './NumberButton'
+import Button from './Button'
 
 function KeypadRow({ numbers }: { numbers: (number | string)[] }) {
 	return (
 		<div className="flex justify-between px-4">
 			{numbers.map((number) => (
-				<NumberButton key={number}>{number}</NumberButton>
+				<Button key={number}>{number}</Button>
 			))}
 		</div>
 	);

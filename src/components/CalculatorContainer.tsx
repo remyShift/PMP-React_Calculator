@@ -3,7 +3,7 @@ import Keypad from './Keypad'
 
 export default function Calculator() {
 	return (
-		<div className="bg-black max-w-md min-w-[400px] h-[58dvh] w-[45dvw] rounded-lg">
+		<div className="bg-black max-w-md min-w-[400px] h-[65dvh] w-[45dvw] rounded-2xl">
 			<Screen />
 			<Keypad />
 		</div>
