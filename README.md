@@ -1,6 +1,6 @@
 # iPhone Calculator Clone
 
-A fully functional calculator built using **React**, replicating the classic design and functionality of the iPhone calculator.
+A fully functional calculator built using **React**, replicating the classic design and functionality of the iPhone calculator. You can see it [here](https://remyshift.github.io/PMP-React_Calculator/).
 
 ## Table of Contents
 
