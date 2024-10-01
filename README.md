@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# iPhone Calculator Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional calculator built using **React**, replicating the classic design and functionality of the iPhone calculator.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Customization](#customization)
+- [Contributors](#contributors)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This project is a clone of the iPhone calculator, designed with React for smooth UI interactions and precise functionality. The calculator includes basic arithmetic operations along with an intuitive, familiar interface that mirrors the iPhone calculator's look and feel.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **iPhone-inspired design** for an authentic calculator experience.
+- **Basic arithmetic operations** including addition, subtraction, multiplication, and division.
+- **Responsive layout** for mobile and desktop devices.
+- **Clear and reset functionality** to easily manage calculations.
+
+## Installation
+
+To run the project locally:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/react-iphone-calculator.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd react-iphone-calculator
+   ```
+
+3. Install the necessary dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000` to view the calculator.
+
+## Usage
+
+Once the app is running, you can use the calculator just like the iPhone version. The layout is optimized for both mobile and desktop views.
+
+## Technologies Used
+
+- **React**: For building UI components and managing state.
+- **TailwindCSS**: For styling and layout, including responsive design.
+
+## Project Structure
+
+```bash
+react-iphone-calculator/
+├── public/          # Static assets
+├── src/
+│   ├── components/  # React components like buttons, display, etc.
+│   ├── App.js       # Main application logic
+│   └── index.js     # Entry point for the React app
+├── package.json     # Project dependencies and scripts
+└── README.md        # Project documentation
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Customization
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To adjust the design or functionality, modify the components in the `src/components/` directory.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Contributors
+
+- [remyShift](https://github.com/remyShift) - Creator and Developer
